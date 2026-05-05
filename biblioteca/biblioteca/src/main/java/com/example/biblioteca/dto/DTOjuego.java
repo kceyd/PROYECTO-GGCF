@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 public class DTOjuego {
-        private Long id;
+    private Long id;
     private String titulo;
     private String genero;
     private String descripcion;

@@ -13,14 +13,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.desarollador.model.DesarrolladorGG;
-import com.example.desarollador.service.servicioDesarrollador.DesarrolladorService;
+import com.example.desarollador.service.servicioDesarrollador;
 @RestController
 @RequestMapping("/api/v0/desarrolladores")
 public class ControlDesarrollador {
 
 
     @Autowired
-    private DesarrolladorService desarrolladorService;
+    private servicioDesarrollador desarrolladorService;
 
     @GetMapping
     public List<DesarrolladorGG> obtenerDesarrolladores() {

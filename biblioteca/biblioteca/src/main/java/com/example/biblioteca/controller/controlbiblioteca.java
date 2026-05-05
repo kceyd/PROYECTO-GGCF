@@ -46,7 +46,7 @@ public class controlbiblioteca {
 
     @GetMapping("/juegos/{juegoId}")
     public DTOjuego obtenerJuego(@PathVariable Long juegoId) {
-        return serviciobibliotecaUsuario.obtenerJuego(juegoId);  // ✅ corregido
+        return serviciobibliotecaUsuario.obtenerJuego(juegoId);  
     }
 }
 

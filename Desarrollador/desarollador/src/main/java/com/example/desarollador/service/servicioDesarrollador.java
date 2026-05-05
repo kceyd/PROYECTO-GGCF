@@ -10,10 +10,10 @@ import com.example.desarollador.repository.repoDesarrollador;
 
 import jakarta.transaction.Transactional;
 
-public class servicioDesarrollador {
+
 @Service
 @Transactional
-public class DesarrolladorService {
+public class servicioDesarrollador {
     @Autowired
     private repoDesarrollador desarrolladorRepository;
 
@@ -38,4 +38,4 @@ public class DesarrolladorService {
     }
 }
 
-}
+
