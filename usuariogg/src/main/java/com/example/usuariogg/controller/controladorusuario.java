@@ -12,8 +12,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.usuariogg.model.usuario.Usuario;
+import com.example.usuariogg.model.usuario;
 import com.example.usuariogg.service.serviciousuario;
+
 @RestController
 @RequestMapping("/api/v0/usuarios")
 public class controladorusuario {
@@ -23,22 +24,22 @@ public class controladorusuario {
     private serviciousuario usuarioService;
 
     @GetMapping
-    public List<Usuario> obtenerUsuarios() {
+    public List<usuario> obtenerUsuarios() {
         return usuarioService.obtenerUsuarios();
     }
 
     @PostMapping
-    public void crearUsuario(@RequestBody Usuario usuario) {
+    public void crearUsuario(@RequestBody usuario usuario) {
         usuarioService.crearUsuario(usuario);
     }
 
     @GetMapping("/{id}")
-    public Usuario obtenerUsuario(@PathVariable Long id) {
+    public usuario obtenerUsuario(@PathVariable Long id) {
         return usuarioService.obtenerUsuario(id);
     }
 
     @PutMapping("/{id}")
-    public void actualizarUsuario(@PathVariable Long id, @RequestBody Usuario usuario) {
+    public void actualizarUsuario(@PathVariable Long id, @RequestBody usuario usuario) {
         usuario.setId(id);
         usuarioService.actualizarUsuario(usuario);
     }
