@@ -18,6 +18,7 @@ public class DesarrolladorGG {
     private String email;
     private String pais;
     private String sitioWeb;
+    
 }
 
 
